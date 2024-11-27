@@ -1,4 +1,6 @@
 $primary-color: blue;
+$font-size: 18px;
+$hover-background: #ff0000;
 
 body {
   color: $primary-color;
@@ -15,9 +17,9 @@ nav {
   }
   li {
     padding: 10px;
-    font-size: 18px;
+    font-size: $font-size;
   }
   a:hover {
-    background-color: #ff0000;
+    background-color: $hover-background;
   }
 }
