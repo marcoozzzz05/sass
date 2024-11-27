@@ -3,3 +3,21 @@ $primary-color: blue;
 body {
   color: $primary-color;
 }
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  li {
+    padding: 10px;
+    font-size: 18px;
+  }
+  a:hover {
+    background-color: #ff0000;
+  }
+}
