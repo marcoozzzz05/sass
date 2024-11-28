@@ -70,3 +70,13 @@ nav {
 
   width: 100% / 3;
 }
+
+$base-font-size: 16px;
+
+@function em($px, $base: $base-font-size) {
+  @return ($px / $base) * 1em;
+}
+
+.item2 {
+  font-size: em(24px);
+}
