@@ -25,4 +25,11 @@ nav a:hover {
 .item4 {
   border: 1px solid;
   border-color: #333333;
+}
+
+.container {
+  width: 100%/3;
+}
+.container .container2 {
+  width: 100%;
 }/*# sourceMappingURL=test.css.map */

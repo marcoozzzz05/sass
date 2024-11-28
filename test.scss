@@ -15,10 +15,12 @@ nav {
     justify-content: center;
     gap: 100px;
   }
+
   li {
     padding: 10px;
     font-size: $font-size;
   }
+
   a:hover {
     background-color: $hover-background;
   }
@@ -32,4 +34,11 @@ nav {
   @extend .item1;
   border: 1px solid;
   border-color: #333333;
+}
+
+.container {
+  .container2 {
+    width: 100%;
+  }
+  width: 100% / 3;
 }
