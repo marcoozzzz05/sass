@@ -23,3 +23,13 @@ nav {
     background-color: $hover-background;
   }
 }
+
+.item1 {
+  background-color: #e7e7e7;
+}
+
+.item4 {
+  @extend .item1;
+  border: 1px solid;
+  border-color: #333333;
+}

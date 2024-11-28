@@ -16,4 +16,13 @@ nav li {
 }
 nav a:hover {
   background-color: #ff0000;
+}
+
+.item1, .item4 {
+  background-color: #e7e7e7;
+}
+
+.item4 {
+  border: 1px solid;
+  border-color: #333333;
 }/*# sourceMappingURL=test.css.map */
