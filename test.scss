@@ -1,14 +1,52 @@
 @import "color";
+$backgroundcolor-dark: #000000;
+$color-white: white;
+$hover-yellow: yellow;
 
-$primary-color: blue;
+@mixin navbar-theme ($theme: "light") {
+  @if $theme =="light" {
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: $hover-background;
+    }
+
+    .item1 {
+      background-color: #e7e7e7;
+    }
+
+    .item4 {
+      @extend .item1;
+      border: 1px solid;
+      border-color: #333333;
+    }
+  }
+
+  @else if $theme =="dark" {
+    background-color: $backgroundcolor-dark;
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: $hover-yellow;
+    }
+  }
+}
+
 $font-size: 18px;
 $hover-background: #ff0000;
 
-body {
-  color: $primary-color;
-}
 
 nav {
+  @include navbar-theme("dark");
+
   ul {
     margin: 0;
     padding: 0;
@@ -23,24 +61,12 @@ nav {
     font-size: $font-size;
   }
 
-  a:hover {
-    background-color: $hover-background;
-  }
-}
-
-.item1 {
-  background-color: #e7e7e7;
-}
-
-.item4 {
-  @extend .item1;
-  border: 1px solid;
-  border-color: #333333;
 }
 
 .container {
   .container2 {
     width: 100%;
   }
+
   width: 100% / 3;
 }

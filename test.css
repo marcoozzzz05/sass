@@ -1,7 +1,13 @@
-body {
-  color: blue;
+nav {
+  background-color: #000000;
 }
-
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: yellow;
+}
 nav ul {
   margin: 0;
   padding: 0;
@@ -13,18 +19,6 @@ nav ul {
 nav li {
   padding: 10px;
   font-size: 18px;
-}
-nav a:hover {
-  background-color: #ff0000;
-}
-
-.item1, .item4 {
-  background-color: #e7e7e7;
-}
-
-.item4 {
-  border: 1px solid;
-  border-color: #333333;
 }
 
 .container {
