@@ -1,0 +1,16 @@
+.container {
+  text-decoration: underline;
+  font-size: 100px;
+  background-color: blue;
+  color: green;
+  padding: 50px;
+  border: 20px solid yellow;
+}
+
+.container2 {
+  font-style: italic;
+  background-color: green;
+  color: blue;
+  padding: 50px;
+  border: 20px solid yellow;
+}/*# sourceMappingURL=test2.css.map */

@@ -1,0 +1,25 @@
+$primary: blue;
+$secondary: green;
+
+@mixin section-style($bgcolor,$textcolor) {
+    @if $bgcolor == blue {
+        text-decoration: underline;
+        font-size: 100px;
+    }
+    @else if $bgcolor == green {
+        font-style: italic;
+    }
+    background-color: $bgcolor;
+    color: $textcolor;
+    padding: 50px;
+    border: 20px solid yellow;
+}
+
+.container {
+    @include section-style($primary,$secondary)
+}
+
+.container2 {
+    @include section-style($secondary,$primary)
+}
+
