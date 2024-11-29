@@ -2,6 +2,7 @@
 $backgroundcolor-dark: #000000;
 $color-white: white;
 $hover-yellow: yellow;
+$noHover: "true";
 
 @mixin navbar-theme ($theme: "light") {
   @if $theme =="light" {
@@ -11,8 +12,10 @@ $hover-yellow: yellow;
       text-decoration: none;
     }
 
+    @if $noHover == "false" {
     a:hover {
       background-color: $hover-background;
+    }
     }
 
     .item1 {
@@ -32,11 +35,13 @@ $hover-yellow: yellow;
     a {
       color: $color-white;
       text-decoration: none;
-    }
-
+    } 
+    
+    @if $noHover == "false" {
     a:hover {
       background-color: $hover-yellow;
     }
+  }
   }
 }
 
