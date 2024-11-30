@@ -85,3 +85,14 @@ $base-font-size: 16px;
 .item2 {
   font-size: em(24px);
 }
+
+$bgcolors: lightgrey, darkgrey;
+
+@for $i from 1 through 2 {
+  .container {
+    background-color: nth($bgcolors, 1);
+  }
+  .container2 {
+    background-color: nth($bgcolors, 2);
+  }
+}
