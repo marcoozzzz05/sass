@@ -96,3 +96,11 @@ $bgcolors: lightgrey, darkgrey;
     background-color: nth($bgcolors, 2);
   }
 }
+
+$colors: blue, red, green, yellow;
+
+@each $color in $colors {
+  .color-#{$color} {
+    color: $color;
+  }
+}
